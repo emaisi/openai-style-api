@@ -49,6 +49,7 @@ class ChatCompletionResponseChoice(BaseModel):
 class ChatCompletionResponseStreamChoice(BaseModel):
     index: int
     delta: DeltaMessage
+    logprobs: Optional[str]=None
     finish_reason: Optional[Literal["stop", "length"]]
 
 

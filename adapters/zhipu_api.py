@@ -102,6 +102,7 @@ class ZhiPuApiModel(ModelAdapter):
                         "content": resp["choices"][0]["content"],
                     },
                     "index": 0,
+                    "logprobs": "",
                     "finish_reason": "stop",
                 }
             ],
@@ -129,6 +130,7 @@ class ZhiPuApiModel(ModelAdapter):
                         "content": completion,
                     },
                     "index": 0,
+                    "logprobs": "",
                     "finish_reason": finish_reason,
                 }
             ],

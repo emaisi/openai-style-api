@@ -36,6 +36,7 @@ class ModelAdapter:
                         "content": completion,
                     },
                     "index": 0,
+                    "logprobs": None,
                     "finish_reason": "stop",
                 }
             ],
@@ -63,6 +64,7 @@ class ModelAdapter:
                         "content": completion,
                     },
                     "index": 0,
+                    "logprobs": None,
                     "finish_reason": "stop",
                 }
             ],
